@@ -1,4 +1,4 @@
-package com.example.twitterclone
+package com.example.twitterclone.activities
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,8 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import com.example.twitterclone.activities.LoginActivity
+import com.example.twitterclone.R
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
@@ -16,9 +18,8 @@ import kotlinx.android.synthetic.main.activity_signup.*
 import kotlinx.android.synthetic.main.activity_signup.emailTIL
 import kotlinx.android.synthetic.main.activity_signup.passwordET
 import kotlinx.android.synthetic.main.activity_signup.passwordTIL
-import utils.DATA_USERS
-import utils.User
-import kotlinx.android.synthetic.main.activity_login.emailET as emailET1
+import com.example.twitterclone.utils.DATA_USERS
+import com.example.twitterclone.utils.User
 
 class SignupActivity : AppCompatActivity() {
 

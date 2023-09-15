@@ -1,4 +1,4 @@
-package com.example.twitterclone
+package com.example.twitterclone.activities
 
 import android.content.Context
 import android.content.Intent
@@ -9,6 +9,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
+import com.example.twitterclone.R
 import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*

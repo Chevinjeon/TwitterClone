@@ -1,4 +1,4 @@
-package utils
+package com.example.twitterclone.utils
 
 val DATA_USERS = "Users"
 val DATA_USER_EMAIL = "email"

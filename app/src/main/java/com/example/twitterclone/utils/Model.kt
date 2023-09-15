@@ -1,4 +1,4 @@
-package utils
+package com.example.twitterclone.utils
 
 data class User(
     val email: String? = "",

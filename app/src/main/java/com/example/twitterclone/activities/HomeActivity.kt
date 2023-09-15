@@ -1,10 +1,12 @@
-package com.example.twitterclone
+package com.example.twitterclone.activities
 
 import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.twitterclone.activities.LoginActivity
+import com.example.twitterclone.R
 import com.google.firebase.auth.FirebaseAuth
 
 class HomeActivity : AppCompatActivity() {

@@ -7,4 +7,5 @@
     <string name="button_signup">Signup</string>
     <string name="signup_text">No account? Go to Signup</string>
     <string name="text_login">Already have an account? Log in</string>
+    <string name="hint_search">Search</string>
 </resources>

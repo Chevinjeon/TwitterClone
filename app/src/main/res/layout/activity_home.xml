@@ -4,14 +4,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".HomeActivity">
+    tools:context="activities.HomeActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/logoutButton"
-        android:layout_height="@dimen/standard_height"
-        android:layout_width="@dimen/standard_width"
-        android:onClick="onLogout"
-        android:text="Logout"/>
-        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/grid1"
+        app:cardCornerRadius="@dimen/standard_corner_radius">
+        
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="@dimen/standard_image"
+            android:layout_height="@dimen/standard_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_user"/>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/titleBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/standard_image"
+            android:paddingLeft="@dimen/grid3"
+            android:layout_gravity="center_vertical"
+            style="@style/Heading"
+            android:text="Home"/>
+        
+        <androidx.cardview.widget.CardView
+            android:id="@+id/searchBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            app:cardCornerRadius="@dimen/standard_corner_radius"
+            android:layout_marginLeft="60dp"
+            android:layout_marginStart="60dp">
+
+            <EditText
+                android:id="@+id/search"
+                android:layout_width="@dimen/standard_width"
+                android:layout_height="@dimen/search_height"
+                android:background="@color/colorPrimary"
+                android:textColorHint="@color/dark_grey"
+                android:hint="@string/hint_search"
+                android:paddingLeft="@dimen/grid2"
+                android:paddingRight="@dimen/grid2"
+                android:textColor="@color/black"
+                android:drawableRight="@android:drawable/ic_menu_search"
+                android:drawableEnd="@android:drawable/ic_menu_search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"/>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
