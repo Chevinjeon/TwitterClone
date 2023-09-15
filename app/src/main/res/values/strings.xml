@@ -2,6 +2,9 @@
     <string name="app_name">TwitterClone</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
+    <string name="hint_username">Username</string>
     <string name="button_login">Login</string>
+    <string name="button_signup">Signup</string>
     <string name="signup_text">No account? Go to Signup</string>
+    <string name="text_login">Already have an account? Log in</string>
 </resources>
