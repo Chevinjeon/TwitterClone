@@ -28,7 +28,7 @@
                 android:src="@drawable/thumbnail" />
 
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/emailTIL"
+                android:id="@+id/usernameTIL"
                 android:layout_width="@dimen/standard_width"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
@@ -39,6 +39,23 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:inputType="text"
+                    android:hint="@string/hint_email"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailTIL"
+                android:layout_width="@dimen/standard_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/usernameTIL"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/grid2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/emailET"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
                     android:hint="@string/hint_email"/>
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -67,7 +84,7 @@
                 android:layout_centerHorizontal="true"
                 style="@style/StandardButton"
                 android:onClick="onSignup"
-                android:text="@string/button_login"
+                android:text="@string/button_signup"
                 android:layout_margin="@dimen/grid2"
                 />
 
