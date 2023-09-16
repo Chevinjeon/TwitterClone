@@ -14,6 +14,17 @@
         app:layout_constraintTop_toTopOf="parent"
         android:hint="@string/hint_tweet_text"/>
 
+
+    <ImageView
+        android:id="@+id/tweetImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="center"
+        android:onClick="addImage"
+        app:layout_constraintTop_toBottomOf="@+id/tweetText"/>
+
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
