@@ -9,18 +9,18 @@ import android.view.inputmethod.EditorInfo
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.example.twitterclone.activities.LoginActivity
 import com.example.twitterclone.R
 import com.example.twitterclone.fragments.HomeFragment
 import com.example.twitterclone.fragments.MyActivityFragment
 import com.example.twitterclone.fragments.SearchFragment
 import com.example.twitterclone.fragments.TwitterFragment
+import com.example.twitterclone.listeners.HomeCallback
 import com.example.twitterclone.utils.DATA_USERS
 import com.example.twitterclone.utils.loadUrl
 import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.auth.User
+import com.example.twitterclone.utils.User
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity(), HomeCallback {
@@ -33,6 +33,7 @@ class HomeActivity : AppCompatActivity(), HomeCallback {
     private val myActivityFragment = MyActivityFragment()
     private var userId = FirebaseAuth.getInstance().currentUser?.uid
     private var user: User? = null
+    private var imageUrl: String? = null
     private var currentFragment: TwitterFragment = homeFragment
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -53,17 +54,23 @@ class HomeActivity : AppCompatActivity(), HomeCallback {
 
             override fun onTabSelected(tab: TabLayout.Tab?) {
                 when(tab?.position) {
+
+                    // first tab
                     0 -> {
                         titleBar.visibility = View.VISIBLE
                         titleBar.text = "Home"
                         searchBar.visibility = View.GONE
                         currentFragment = homeFragment
                     }
+
+                    // second tab
                     1 -> {
                         titleBar.visibility = View.GONE
                         searchBar.visibility = View.VISIBLE
                         currentFragment = searchFragment
                     }
+
+                    // third tab
                     2 -> {
 
                         titleBar.visibility = View.VISIBLE

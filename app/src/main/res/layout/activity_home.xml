@@ -47,6 +47,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="center_vertical"
             app:cardCornerRadius="@dimen/standard_corner_radius"
+            android:visibility="gone"
             android:layout_marginLeft="60dp"
             android:layout_marginStart="60dp">
 
