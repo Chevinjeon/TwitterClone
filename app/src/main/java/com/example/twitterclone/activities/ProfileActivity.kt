@@ -49,7 +49,7 @@ class ProfileActivity : AppCompatActivity() {
         firebaseDB.collection(DATA_USERS).document(userId!!).get()
             .addOnSuccessListener { documentSnapshot ->
                 val user = documentSnapshot.toObject(User::class.java)
-                usernameET.setText(user?.username, TextView.BufferType.EDITABLE)
+                uusernameET.setText(user?.username, TextView.BufferType.EDITABLE)
                 eemailET.setText(user?.email, TextView.BufferType.EDITABLE)
                 imageUrl = user?.imageUrl
                 imageUrl?.let{

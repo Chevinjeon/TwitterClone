@@ -14,7 +14,7 @@ import com.example.twitterclone.utils.DATA_TWEETS
 import com.example.twitterclone.utils.DATA_TWEET_HASHTAGS
 import com.example.twitterclone.utils.DATA_TWEET_USER_IDS
 import com.example.twitterclone.utils.Tweet
-import kotlinx.android.synthetic.main.fragment_search.*
+import kotlinx.android.synthetic.main.fragment_home.*
 
 class HomeFragment : TwitterFragment() {
 
