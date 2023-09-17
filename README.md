@@ -2,7 +2,7 @@
 ![thumbnail](https://github.com/Chevinjeon/TwitterClone/assets/109643560/bdf7c576-360d-4500-bb69-e75b22627c29)
 
 With Twitter's recent rebranding to X, this platform now has the largest user base ever for limitless interactivity.
-In homage to the iconic bird, I ventured to construct my own social network. Armed with Android development and the elegance of Kotlin, I harnessed the Firebase APIs as the backbone of my network's infrastructure. This enabled seamless user management, encompassing the realms of login and signout functionalities, user profiles, the orchestration of tweets and retweets, home activities, and fragment screens. My creation encompasses a plethora of typical Twitter features, including tweets, hashtags, likes, retweets, follows, and news feeds, all seamlessly interwoven into the fabric of my digital masterpiece.
+In homage to the iconic bird, I ventured to construct my own social network. Armed with Android development and the elegance of Kotlin, I harnessed the Firebase APIs as the backbone of my network's infrastructure. This enabled seamless user management, login and signout functionalities, user profiles, tweets and retweets, home activities, and fragment screens. 
 
 
 **The UI of the app has been updated in v2 according to the UI of Twitter's Android app v7.24.1**
