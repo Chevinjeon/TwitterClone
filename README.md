@@ -6,7 +6,7 @@ In homage to the iconic bird, I ventured to construct my own social network. Arm
 
 
 **The UI of the app has been updated in v2 according to the UI of Twitter's Android app v7.24.1**
-
+** The dependencies have been updated and the project has been migrated to AndroidX in November 2020. **
 | Version 1  | Version 2 (Twitter v7.24.1) |
 | -------------  | -------------|
 | ![twitter-ui-v1](https://github.com/Chevinjeon/TwitterClone/assets/109643560/1c51b600-ab46-42f1-a658-d7bb1693b3af) |  ![twitter-ui-v2](https://github.com/Chevinjeon/TwitterClone/assets/109643560/881157d4-0499-4272-838a-b72f663697c1) |
