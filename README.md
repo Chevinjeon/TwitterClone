@@ -36,7 +36,7 @@ $ gradle classes
 ![architecture](https://github.com/Chevinjeon/TwitterClone/assets/109643560/6285c64e-8032-4f08-be49-8d9c644830a0)
 
 
-Let's delve into the technological marvels that underpin this endeavour:
+### Let's delve into the technological marvels that underpin this endeavour:
 | Main Features  | Description  |  Preview  | 
 | -------------  | -------------| ------------- |
 | Authentication | Create a new user by using the Firebase Authentication service  | ![Frame 75](https://github.com/Chevinjeon/TwitterClone/assets/109643560/2b9923d8-083d-412a-bb6d-2b62c05552bd) |
